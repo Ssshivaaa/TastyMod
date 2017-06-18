@@ -1,0 +1,16 @@
+[
+{
+  "modid": "TastyMod",
+  "name": "Tasty Mod",
+  "description": "MineCraft 1.7.10 Food Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "Bros",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
