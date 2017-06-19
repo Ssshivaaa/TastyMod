@@ -42,8 +42,6 @@ public class TastyModCore
     public static MeatPie meatPie;
     public static Item meatPieItem;
     public static ItemFood applePie;
-
-
     public static Item breadSlice;
     public static Item chocolate;
     public static Item flour;
@@ -56,6 +54,8 @@ public class TastyModCore
     public static Item friedChips;
     public static Item rawOmelet;
     public static Item omelet;
+    public static ItemFood carrotSoup;
+    public static ItemFood hamburger;
 
     @EventHandler
     public void preLoad(FMLInitializationEvent event)
@@ -77,6 +77,8 @@ public class TastyModCore
         friedChips = new FriedChips(1,1f,false);
         rawOmelet = new RawOmelet(1,1f,false);
         omelet = new Omelet(1,1f,false);
+        carrotSoup = new CarrotSoup(6,1f,false);
+        hamburger = new Hamburger(6,1f,false);
 
         new TastyModRegister();
         new TastyModRecipes();

@@ -24,11 +24,12 @@ public class TastyModRegister {
         GameRegistry.registerItem(TastyModCore.friedChips,"FriedChips");
         GameRegistry.registerItem(TastyModCore.omelet,"Omelet");
         GameRegistry.registerItem(TastyModCore.rawOmelet,"RawOmelet");
-
+        GameRegistry.registerItem(TastyModCore.carrotSoup,"CarrotSoup");
         GameRegistry.registerItem(TastyModCore.breadSlice,"BreadSlice");
         GameRegistry.registerItem(TastyModCore.chocolate,"Chocolate");
         GameRegistry.registerItem(TastyModCore.flour,"Flour");
         GameRegistry.registerItem(TastyModCore.cereal,"Cereal");
         GameRegistry.registerItem(TastyModCore.spaghetti,"Spaghetti");
+        GameRegistry.registerItem(TastyModCore.hamburger,"Hamburger");
     }
 }

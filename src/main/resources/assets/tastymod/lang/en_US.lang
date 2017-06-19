@@ -1,6 +1,6 @@
-item.StewedMeat.name=StewedMeat
-item.MeatPie.name=MeatPie
-item.ApplePie.name=ApplePie
+item.StewedMeat.name=Stewed Meat
+item.MeatPie.name=Meat Pie
+item.ApplePie.name=Apple Pie
 item.Caramel.name=Caramel
 item.SugarBucket.name=Sugar Bucket
 item.FriedEgg.name=Fried Egg
@@ -13,3 +13,5 @@ item.Chocolate.name=Chocolate
 item.Flour.name=Flour
 item.Cereal.name=Cereal
 item.Spaghetti.name=Spaghetti
+item.CarrotSoup.name=Carrot Soup
+item.Hamburger.name=Hamburger

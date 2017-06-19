@@ -1,5 +1,17 @@
+item.StewedMeat.name=Варёное мясо
+item.MeatPie.name=Мясной пирог
+item.ApplePie.name=Яблочный пирог
+item.Caramel.name=Карамель
+item.SugarBucket.name=Ведро сахара
+item.FriedEgg.name=Жаренное яйцо
+item.Chips.name=Чипсы
+item.FriedChips.name=Жаренне чипсы
+item.RawOmelet.name=Сырой омлет
+item.Omelet.name=Омлет
 item.BreadSlice.name=Ломтик хлеба
 item.Chocolate.name=Шоколад
 item.Flour.name=Мука
 item.Cereal.name=Пшеничный злак
 item.Spaghetti.name=Спагетти
+item.CarrotSoup.name=Морковный суп
+item.Hamburger.name=Гамбургер
