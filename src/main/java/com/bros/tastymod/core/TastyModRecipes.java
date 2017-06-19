@@ -31,7 +31,7 @@ public class TastyModRecipes {
         GameRegistry.addRecipe(new ItemStack(TastyModCore.meatPieItem,1), new Object[]{" S ","MEM","WWW",('S'),GrowthCraftCore.items.salt.asStack(1),('M'),Items.cooked_beef,('E'),Items.egg,('W'),Items.wheat});
         GameRegistry.addShapelessRecipe(new ItemStack(TastyModCore.chips,1),new Object[]{Items.potato,Items.potato,Items.potato});
         GameRegistry.addShapelessRecipe(new ItemStack(breadSlice,3), new Object[]{Items.bread});
-        GameRegistry.addShapelessRecipe(new ItemStack(chocolate,1), new Object[]{new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3),new ItemStack(Items.dye, 1, 3)});
+        GameRegistry.addRecipe(new ItemStack(chocolate,1), new Object[]{"CCC","CCC","CCC",('C'),new ItemStack(Items.dye, 1, 3)});
         GameRegistry.addShapelessRecipe(new ItemStack(flour,6),new Object[]{Items.wheat,Items.wheat,Items.wheat,Items.wheat});
         GameRegistry.addSmelting(TastyModCore.sugarBucket, new ItemStack(TastyModCore.caramel,1),500f);
         GameRegistry.addSmelting(TastyModCore.chips, new ItemStack(TastyModCore.friedChips,1),500f);

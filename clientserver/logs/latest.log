@@ -1,11 +1,37 @@
-[02:24:38] [main/INFO]: Setting user: Player24
-[02:24:40] [Client thread/INFO]: LWJGL Version: 2.9.1
-[02:24:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tasty Mod
-[02:24:55] [Sound Library Loader/INFO]: Sound engine started
-[02:25:02] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[02:25:02] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[02:25:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tasty Mod
-[02:25:03] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[02:25:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[02:25:04] [Sound Library Loader/INFO]: Sound engine started
-[02:25:06] [Client thread/INFO]: Stopping!
+[21:06:44] [main/INFO]: Setting user: Player608
+[21:06:46] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:07:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tasty Mod, FMLFileResourcePack:Growthcraft Apples, FMLFileResourcePack:Growthcraft, FMLFileResourcePack:Growthcraft Cellar, FMLFileResourcePack:Growthcraft Bamboo, FMLFileResourcePack:Growthcraft Bees, FMLFileResourcePack:Growthcraft Fishtrap, FMLFileResourcePack:Growthcraft Grapes, FMLFileResourcePack:Growthcraft Hops, FMLFileResourcePack:Growthcraft Milk, FMLFileResourcePack:Growthcraft Rice
+[21:07:18] [Sound Library Loader/INFO]: Sound engine started
+[21:07:46] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:07:46] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:07:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tasty Mod, FMLFileResourcePack:Growthcraft Apples, FMLFileResourcePack:Growthcraft, FMLFileResourcePack:Growthcraft Cellar, FMLFileResourcePack:Growthcraft Bamboo, FMLFileResourcePack:Growthcraft Bees, FMLFileResourcePack:Growthcraft Fishtrap, FMLFileResourcePack:Growthcraft Grapes, FMLFileResourcePack:Growthcraft Hops, FMLFileResourcePack:Growthcraft Milk, FMLFileResourcePack:Growthcraft Rice
+[21:07:47] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:07:48] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:07:49] [Sound Library Loader/INFO]: Sound engine started
+[21:08:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:08:17] [Server thread/INFO]: Generating keypair
+[21:08:18] [Server thread/INFO]: Preparing start region for level 0
+[21:08:19] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:08:19] [Server thread/INFO]: Player608[local:E:bf0a2926] logged in with entity id 208 at (583.2878493384325, 4.480710876331692, 1204.1837970735553)
+[21:08:19] [Server thread/INFO]: Player608 joined the game
+[21:08:20] [Server thread/INFO]: Saving and pausing game...
+[21:08:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:08:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:08:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:09:05] [Server thread/INFO]: Player608 has just earned the achievement [Taking Inventory]
+[21:09:05] [Client thread/INFO]: [CHAT] Player608 has just earned the achievement [Taking Inventory]
+[21:09:19] [Server thread/INFO]: [Player608: Set own game mode to Survival Mode]
+[21:09:19] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:09:21] [Server thread/INFO]: [Player608: Set own game mode to Creative Mode]
+[21:09:21] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:09:42] [Server thread/INFO]: Saving and pausing game...
+[21:09:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:09:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:09:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:09:44] [Client thread/INFO]: Stopping!
+[21:09:44] [Server thread/INFO]: Stopping server
+[21:09:44] [Server thread/INFO]: Saving players
+[21:09:44] [Server thread/INFO]: Saving worlds
+[21:09:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:09:44] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:09:44] [Server thread/INFO]: Saving chunks for level 'New World'/The End
