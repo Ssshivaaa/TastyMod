@@ -11,7 +11,7 @@ public class StewedMeat extends ItemFood {
     public StewedMeat(int p_i45339_1_, float p_i45339_2_, boolean p_i45339_3_) {
         super(p_i45339_1_, p_i45339_2_, p_i45339_3_);
         this.setUnlocalizedName("StewedMeat");
-        this.setTextureName("tastymod:stewedmeat");
+        this.setTextureName(TastyModCore.MODID + ":stewedmeat");
         this.setCreativeTab(CreativeTabs.tabFood);
     }
 }
