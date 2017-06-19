@@ -60,15 +60,11 @@ public class TastyModCore
     @EventHandler
     public void preLoad(FMLInitializationEvent event)
     {
-        TastyModCore.stewedMeat = new StewedMeat(10,1,false);
-        TastyModCore.meatPie = new MeatPie();
-        TastyModCore.meatPieItem = new MeatPieItem(meatPie);
-        TastyModCore.applePie = new ApplePie(8,1,false);
-
-        new TastyModRegister();
-        new TastyModRecipes();
         EventHandlerSpecialBucketFill.instance().addEntry(new SaltBucketEntry()); //Enabling salt water in ocean biomes
-
+        stewedMeat = new StewedMeat(10,1,false);
+        meatPie = new MeatPie();
+        meatPieItem = new MeatPieItem(meatPie);
+        applePie = new ApplePie(8,1,false);
         breadSlice = new BreadSlice(3,1,false);
         chocolate = new Chocolate(4,1,false);
         flour  = new Flour(1,0.2f,false);
@@ -81,7 +77,8 @@ public class TastyModCore
         friedChips = new FriedChips(1,1f,false);
         rawOmelet = new RawOmelet(1,1f,false);
         omelet = new Omelet(1,1f,false);
+
         new TastyModRegister();
-        new TastyModReciepes();
+        new TastyModRecipes();
     }
 }

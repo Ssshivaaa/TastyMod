@@ -25,10 +25,10 @@ public class TastyModRegister {
         GameRegistry.registerItem(TastyModCore.omelet,"Omelet");
         GameRegistry.registerItem(TastyModCore.rawOmelet,"RawOmelet");
 
-        GameRegistry.registerItem(breadSlice,"BreadSlice");
-        GameRegistry.registerItem(chocolate,"Chocolate");
-        GameRegistry.registerItem(flour,"Flour");
-        GameRegistry.registerItem(cereal,"Cereal");
-        GameRegistry.registerItem(spaghetti,"Spaghetti");
+        GameRegistry.registerItem(TastyModCore.breadSlice,"BreadSlice");
+        GameRegistry.registerItem(TastyModCore.chocolate,"Chocolate");
+        GameRegistry.registerItem(TastyModCore.flour,"Flour");
+        GameRegistry.registerItem(TastyModCore.cereal,"Cereal");
+        GameRegistry.registerItem(TastyModCore.spaghetti,"Spaghetti");
     }
 }
