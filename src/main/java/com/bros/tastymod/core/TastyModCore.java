@@ -38,7 +38,6 @@ public class TastyModCore
     public static Item flour;
     public static Item cereal;
     public static Item spaghetti;
-
     public static Item caramel;
     public static Item sugarBucket;
     public static Item friedEgg;
@@ -48,7 +47,6 @@ public class TastyModCore
     public static Item omelet;
 
     @EventHandler
-    public void preLoad(FMLInitializationEvent event)
     public void preLoad (FMLInitializationEvent event)
     {
         EventHandlerSpecialBucketFill.instance().addEntry(new SaltBucketEntry()); //Enabling salt water in ocean biomes
@@ -58,9 +56,6 @@ public class TastyModCore
         flour  = new Flour(1,0.2f,false);
         cereal  = new Cereal(6,1,false);
         spaghetti = new Spaghetti(1,0.2f,false);
-
-        new TastyModRegister();
-        new TastyModReciepes();
         caramel = new Caramel(1,1f,false);
         sugarBucket = new SugarBucket(1,1f,false);
         friedEgg = new FriedEgg(1,1f,false);
