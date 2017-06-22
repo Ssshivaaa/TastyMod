@@ -43,5 +43,8 @@ public class TastyModRecipes {
         GameRegistry.addRecipe(new ItemStack(TastyModCore.hamburger,1), new Object[]{"S  ","B  ","S  ",('S'), TastyModCore.breadSlice,('B'),Items.cooked_beef});
         GameRegistry.addRecipe(new ItemStack(TastyModCore.hamburger,1), new Object[]{" S "," B "," S ",('S'), TastyModCore.breadSlice,('B'),Items.cooked_beef});
         GameRegistry.addRecipe(new ItemStack(TastyModCore.hamburger,1), new Object[]{"  S","  B","  S",('S'), TastyModCore.breadSlice,('B'),Items.cooked_beef});
+        GameRegistry.addShapelessRecipe(new ItemStack(TastyModCore.mince),new Object[]{Items.rotten_flesh,Items.rotten_flesh,Items.rotten_flesh});
+        GameRegistry.addRecipe(new ItemStack(TastyModCore.sausage, 1), new Object[]{"SMS","MGM","SMS",('S'),GrowthCraftCore.items.salt.asStack(1),('M'),TastyModCore.mince,('G'),TastyModCore.guts});
+        GameRegistry.addSmelting(TastyModCore.sausage,new ItemStack(TastyModCore.friedSausage),500f);
     }
 }

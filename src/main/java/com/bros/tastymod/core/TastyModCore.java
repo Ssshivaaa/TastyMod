@@ -8,6 +8,7 @@ import com.bros.tastymod.items.*;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import growthcraft.apples.GrowthCraftApples;
 import growthcraft.core.GrowthCraftCore;
@@ -22,18 +23,23 @@ import growthcraft.core.init.GrcCoreItems;
 import growthcraft.core.util.FluidFactory;
 import growthcraft.milk.GrowthCraftMilk;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.passive.EntitySheep;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import com.bros.tastymod.items.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemFood;
+import net.minecraft.item.*;
 import growthcraft.core.bucket.SaltBucketEntry;
 import growthcraft.core.eventhandler.EventHandlerSpecialBucketFill;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.minecart.MinecartCollisionEvent;
 
 import java.rmi.registry.Registry;
 
@@ -60,6 +66,11 @@ public class TastyModCore {
     public static Item friedChips;
     public static Item rawOmelet;
     public static Item omelet;
+    public static Item guts;
+    public static ItemFood sausage;
+    public static ItemFood mince;
+    public static ItemSword gutKnife;
+    public static ItemFood friedSausage;
     public static ItemFood carrotSoup;
     public static ItemFood hamburger;
     public static Block myasorubka;
@@ -88,6 +99,11 @@ public class TastyModCore {
         omelet = new Omelet(1, 1f, false);
         carrotSoup = new CarrotSoup(6, 1f, false);
         hamburger = new Hamburger(6, 1f, false);
+        guts = new Guts();
+        sausage = new Sausage(4,1f,true);
+        mince = new Mince(1,1f,true);
+        friedSausage = new FriedSausage(10,1f,false);
+        gutKnife = new GutKnife(Item.ToolMaterial.IRON);
 
         new TastyModRegister();
         new TastyModRecipes();
@@ -107,5 +123,8 @@ public class TastyModCore {
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit(e);
     }
-
+    @EventHandler
+    public void PreInitialization(FMLPreInitializationEvent event) {
+        MinecraftForge.EVENT_BUS.register(new addEntityDrop());
+    }
 }
