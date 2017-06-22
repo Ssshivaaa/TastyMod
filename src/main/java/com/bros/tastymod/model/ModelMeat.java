@@ -28,14 +28,14 @@ public ModelMeat()
 MCAVersionChecker.checkForLibraryVersion(getClass(), MCA_MIN_REQUESTED_VERSION);
 
 textureWidth = 32;
-textureHeight = 16;
+textureHeight = 32;
 
 shape1 = new MCAModelRenderer(this, "Shape1", 8, 14);
 shape1.mirror = false;
 shape1.addBox(0.0F, 0.0F, 0.0F, 6, 12, 6);
 shape1.setInitialRotationPoint(11.0F, -8.0F, -1.0F);
 shape1.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape1.setTextureSize(32, 16);
+shape1.setTextureSize(32, 32);
 parts.put(shape1.boxName, shape1);
 
 shape2 = new MCAModelRenderer(this, "Shape2", 16, 0);
@@ -43,7 +43,7 @@ shape2.mirror = false;
 shape2.addBox(0.0F, 0.0F, 0.0F, 4, 4, 4);
 shape2.setInitialRotationPoint(17.0F, -3.0F, 0.0F);
 shape2.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape2.setTextureSize(32, 16);
+shape2.setTextureSize(32, 32);
 parts.put(shape2.boxName, shape2);
 
 shape4 = new MCAModelRenderer(this, "Shape4", 16, 8);
@@ -51,7 +51,7 @@ shape4.mirror = false;
 shape4.addBox(2.0F, 2.0F, -1.0F, 4, 1, 4);
 shape4.setInitialRotationPoint(10.0F, 5.0F, 1.0F);
 shape4.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape4.setTextureSize(32, 16);
+shape4.setTextureSize(32, 32);
 parts.put(shape4.boxName, shape4);
 
 shape5 = new MCAModelRenderer(this, "Shape5", 7, 4);
@@ -59,7 +59,7 @@ shape5.mirror = false;
 shape5.addBox(0.0F, 0.0F, 0.0F, 2, 6, 2);
 shape5.setInitialRotationPoint(7.0F, -2.0F, 1.0F);
 shape5.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape5.setTextureSize(32, 16);
+shape5.setTextureSize(32, 32);
 parts.put(shape5.boxName, shape5);
 
 shape3 = new MCAModelRenderer(this, "Shape3", 0, 0);
@@ -67,7 +67,7 @@ shape3.mirror = false;
 shape3.addBox(0.0F, 0.0F, 0.0F, 2, 3, 2);
 shape3.setInitialRotationPoint(13.0F, 4.0F, 1.0F);
 shape3.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape3.setTextureSize(32, 16);
+shape3.setTextureSize(32, 32);
 parts.put(shape3.boxName, shape3);
 
 shape6 = new MCAModelRenderer(this, "Shape6", 0, 15);
@@ -75,7 +75,7 @@ shape6.mirror = false;
 shape6.addBox(0.0F, 0.0F, 0.0F, 2, 2, 2);
 shape6.setInitialRotationPoint(-2.0F, 4.0F, 0.0F);
 shape6.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape6.setTextureSize(32, 16);
+shape6.setTextureSize(32, 32);
 parts.put(shape6.boxName, shape6);
 shape5.addChild(shape6);
 
@@ -84,7 +84,7 @@ shape7.mirror = false;
 shape7.addBox(0.0F, 0.0F, 0.0F, 2, 2, 2);
 shape7.setInitialRotationPoint(2.0F, 0.0F, 0.0F);
 shape7.setInitialRotationMatrix(new Matrix4f().set(new Quaternion(0.0F, 0.0F, 0.0F, 1.0F)).transpose());
-shape7.setTextureSize(32, 16);
+shape7.setTextureSize(32, 32);
 parts.put(shape7.boxName, shape7);
 shape5.addChild(shape7);
 

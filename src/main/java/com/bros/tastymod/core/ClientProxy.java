@@ -30,13 +30,13 @@ public class ClientProxy extends CommonProxy {
         super.postInit(e);
     }
 
-    public void registerRenderers()
+    public static void registerRenderers()
     {
         ClientRegistry.bindTileEntitySpecialRenderer(TieleEntityTable.class, new RenderTable());
         registerItemRenderer();
     }
 
-    public void registerItemRenderer()
+    public static void registerItemRenderer()
     {
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(TastyModCore.myasorubka), new GenereticBlockItemRenderer(new TieleEntityTable(), new RenderTable()));
     }

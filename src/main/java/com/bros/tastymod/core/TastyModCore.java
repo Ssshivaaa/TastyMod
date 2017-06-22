@@ -98,7 +98,7 @@ public class TastyModCore {
 
         new TastyModRegister();
         new TastyModRecipes();
-        proxyy.registerRenderers();
+        ClientProxy.registerRenderers();
     }
 
     @EventHandler
