@@ -1,5 +1,6 @@
 package com.bros.tastymod.core;
 
+import com.bros.tastymod.blocks.BlockTable;
 import com.bros.tastymod.blocks.MeatPie;
 import com.bros.tastymod.items.ApplePie;
 import com.bros.tastymod.items.MeatPieItem;
@@ -21,7 +22,9 @@ import growthcraft.core.common.item.ItemSalt;
 import growthcraft.core.init.GrcCoreItems;
 import growthcraft.core.util.FluidFactory;
 import growthcraft.milk.GrowthCraftMilk;
+import javafx.scene.paint.Material;
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import com.bros.tastymod.items.*;
 import cpw.mods.fml.common.Mod;
@@ -64,6 +67,8 @@ public class TastyModCore {
     public static ItemFood hamburger;
     public static Block myasorubka;
 
+    public static ClientProxy proxyy;
+
     @SidedProxy(clientSide = "com.bros.tastymod.core.ClientProxy", serverSide = "com.bros.tastymod.core.ServerProxy")
     public static CommonProxy proxy;
 
@@ -89,8 +94,11 @@ public class TastyModCore {
         carrotSoup = new CarrotSoup(6, 1f, false);
         hamburger = new Hamburger(6, 1f, false);
 
+        myasorubka = new BlockTable().setCreativeTab(CreativeTabs.tabFood);
+
         new TastyModRegister();
         new TastyModRecipes();
+        proxyy.registerRenderers();
     }
 
     @EventHandler

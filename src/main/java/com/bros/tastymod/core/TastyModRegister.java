@@ -31,5 +31,7 @@ public class TastyModRegister {
         GameRegistry.registerItem(TastyModCore.cereal,"Cereal");
         GameRegistry.registerItem(TastyModCore.spaghetti,"Spaghetti");
         GameRegistry.registerItem(TastyModCore.hamburger,"Hamburger");
+
+        GameRegistry.registerBlock(TastyModCore.myasorubka,"Myasorubka");
     }
 }
