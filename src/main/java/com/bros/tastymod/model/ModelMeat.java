@@ -14,6 +14,7 @@ import com.bros.tastymod.model.MCACommonLibrary.*;
 public class ModelMeat extends ModelBase {
 public final int MCA_MIN_REQUESTED_VERSION = 5;
 public HashMap<String, MCAModelRenderer> parts = new HashMap<String, MCAModelRenderer>();
+public BaseEntityMeat entityMeat;
 
 MCAModelRenderer shape1;
 MCAModelRenderer shape2;
@@ -93,10 +94,7 @@ shape5.addChild(shape7);
 @Override
 public void render(Entity par1Entity, float par2, float par3, float par4, float par5, float par6, float par7) 
 {
-//EntityMeat entity = (EntityMeat)par1Entity;
-
-//AnimationHandler.performAnimationInModel(parts, entity);
-
+//AnimationHandler.performAnimationInModel(parts, (EntityMeat)entityMeat); // prablema
 //Render every non-child part
 shape1.render(par7);
 shape2.render(par7);
