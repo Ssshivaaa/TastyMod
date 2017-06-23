@@ -9,29 +9,8 @@ import com.bros.tastymod.items.*;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
-import growthcraft.apples.GrowthCraftApples;
-import growthcraft.core.GrowthCraftCore;
-import growthcraft.core.common.GrcModuleBase;
-import growthcraft.core.common.definition.FluidDefinition;
-import growthcraft.core.common.definition.ItemDefinition;
-import growthcraft.core.common.item.GrcItemBase;
-import growthcraft.core.common.item.GrcItemBucketBase;
-import growthcraft.core.common.item.GrcItemFoodBase;
-import growthcraft.core.common.item.ItemSalt;
-import growthcraft.core.init.GrcCoreItems;
-import growthcraft.core.util.FluidFactory;
-import growthcraft.milk.GrowthCraftMilk;
-import javafx.scene.paint.Material;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.passive.EntitySheep;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import com.bros.tastymod.items.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -39,13 +18,7 @@ import net.minecraft.item.*;
 import growthcraft.core.bucket.SaltBucketEntry;
 import growthcraft.core.eventhandler.EventHandlerSpecialBucketFill;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.living.LivingDropsEvent;
-import net.minecraftforge.event.entity.minecart.MinecartCollisionEvent;
-
-import java.rmi.registry.Registry;
-
 
 @Mod(modid = TastyModCore.MODID, version = TastyModCore.VERSION)
 
@@ -56,6 +29,7 @@ public class TastyModCore {
     public static ItemFood stewedMeat;
     public static MeatPie meatPie;
     public static Item meatPieItem;
+    public static Item meatGrinderItem;
     public static ItemFood applePie;
     public static Item breadSlice;
     public static Item chocolate;
@@ -109,8 +83,8 @@ public class TastyModCore {
         mince = new Mince(1,1f,true);
         friedSausage = new FriedSausage(10,1f,false);
         gutKnife = new GutKnife(Item.ToolMaterial.IRON);
-
         myasorubka = new BlockTable().setCreativeTab(CreativeTabs.tabFood);
+        meatGrinderItem = new MeatGrindeItem(myasorubka);
 
         new TastyModRegister();
         new TastyModRecipes();

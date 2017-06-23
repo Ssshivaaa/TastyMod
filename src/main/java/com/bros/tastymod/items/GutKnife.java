@@ -12,5 +12,6 @@ public class GutKnife extends ItemSword {
         this.setCreativeTab(CreativeTabs.tabCombat);
         this.setTextureName("tastymod:gut_sword");
         this.setUnlocalizedName("GutKnife");
+        this.setMaxStackSize(1);
     }
 }
