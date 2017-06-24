@@ -18,18 +18,19 @@ public class RenderTable extends TileEntitySpecialRenderer{
 
     private ModelMeat model;
     private ResourceLocation texture = new ResourceLocation("tastymod:textures/blocks/Meat.png");
-    public static ModelMeat baseEntityMeat;
+    public ModelMeat baseEntityMeat;
 
     public RenderTable()
     {
         model = new ModelMeat();
-       // this.baseEntityMeat = new ModelMeat();
+        baseEntityMeat = new ModelMeat();
     }
 
     @Override
-    public void renderTileEntityAt(TileEntity tile, double x, double y, double z, float scale) {
-       /* if(!(tile instanceof EntityMeat)) return;
-        final EntityMeat entityMeat = (EntityMeat)tile;
+    public void renderTileEntityAt(final TileEntity tile, double x, double y, double z, float scale) {
+       // if(!(tile instanceof EntityMeat)) return;
+      /*  final EntityMeat entityMeat = (EntityMeat)tile;
+        ((ModelMeat)this.baseEntityMeat).setTileEntity(entityMeat);
         entityMeat.getAnimationHandler().animationsUpdate();*/
         GL11.glPushMatrix();
         GL11.glTranslated(x-0.3, y+ 0.5,z+0.3);
