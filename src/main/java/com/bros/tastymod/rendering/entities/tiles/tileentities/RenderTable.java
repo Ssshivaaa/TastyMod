@@ -4,6 +4,7 @@ import com.bros.tastymod.model.BaseEntityMeat;
 import com.bros.tastymod.model.EntityMeat;
 import com.bros.tastymod.model.ModelMeat;
 import com.bros.tastymod.rendering.entities.tiles.TieleEntityTable;
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.Particle;
 import cpw.mods.fml.common.Mod;
 import jdk.nashorn.internal.runtime.regexp.joni.constants.EncloseType;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;

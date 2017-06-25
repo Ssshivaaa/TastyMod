@@ -2,6 +2,7 @@ package com.bros.tastymod.blocks;
 
 import com.bros.tastymod.core.TastyModCore;
 import com.bros.tastymod.rendering.entities.tiles.TieleEntityTable;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.item.EntityItem;
@@ -24,7 +25,9 @@ public class BlockTable extends BlockContainer {
         setHardness(5f);
         setStepSound(soundTypeMetal);
         setResistance(10f);
+        setBlockTextureName("tastymod:Meat");
     }
+
 
     @Override
     public int getRenderType(){
@@ -47,6 +50,11 @@ public class BlockTable extends BlockContainer {
     @Override
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_) {
         return TastyModCore.meatGrinderItem;
+    }
+
+    @Override
+    public void breakBlock(World p_149749_1_, int p_149749_2_, int p_149749_3_, int p_149749_4_, Block p_149749_5_, int p_149749_6_) {
+        super.breakBlock(p_149749_1_, p_149749_2_, p_149749_3_, p_149749_4_, this, p_149749_6_);
     }
 
     @Override
@@ -133,6 +141,9 @@ public class BlockTable extends BlockContainer {
             }
         }
     }
+
+
+
     public static int func_150027_b(int p_150027_0_)
     {
         return p_150027_0_;
