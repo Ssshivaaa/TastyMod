@@ -38,5 +38,8 @@ public class TastyModRegister {
         GameRegistry.registerItem(TastyModCore.gutKnife,"GutKnife");
         GameRegistry.registerItem(TastyModCore.meatGrinderItem,"MeatGrinderItem");
         GameRegistry.registerBlock(TastyModCore.myasorubka,"Myasorubka");
+        GameRegistry.registerItem(TastyModCore.smallSausages,"SmallSausages");
+        GameRegistry.registerItem(TastyModCore.friedSmallSausages,"FriesSmallSausages");
+        GameRegistry.registerItem(TastyModCore.rissole,"RIssole");
     }
 }

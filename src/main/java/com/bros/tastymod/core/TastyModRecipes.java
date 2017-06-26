@@ -47,5 +47,8 @@ public class TastyModRecipes {
         GameRegistry.addRecipe(new ItemStack(TastyModCore.sausage, 1), new Object[]{"SMS","MGM","SMS",('S'),GrowthCraftCore.items.salt.asStack(1),('M'),TastyModCore.mince,('G'),TastyModCore.guts});
         GameRegistry.addSmelting(TastyModCore.sausage,new ItemStack(TastyModCore.friedSausage),500f);
         GameRegistry.addRecipe(new ItemStack(TastyModCore.gutKnife, 1), new Object[]{"  B"," B ","I  ",('I'), Items.iron_ingot, ('B'),Items.bone});
+        GameRegistry.addRecipe(new ItemStack(TastyModCore.smallSausages,3), new Object[]{"MMM","GGG","SSS",('M'), TastyModCore.mince, ('G'),TastyModCore.guts,('S'),GrowthCraftCore.items.salt.asStack(1)});
+        GameRegistry.addSmelting(TastyModCore.smallSausages, new ItemStack(TastyModCore.friedSmallSausages,1),500f);
+        GameRegistry.addSmelting(TastyModCore.mince, new ItemStack(TastyModCore.rissole, 1),500f);
     }
 }

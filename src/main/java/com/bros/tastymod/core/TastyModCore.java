@@ -45,12 +45,15 @@ public class TastyModCore {
     public static Item omelet;
     public static Item guts;
     public static ItemFood sausage;
+    public static ItemFood smallSausages;
+    public static ItemFood friedSmallSausages;
     public static ItemFood mince;
     public static ItemSword gutKnife;
     public static ItemFood friedSausage;
     public static ItemFood carrotSoup;
     public static ItemFood hamburger;
     public static Block myasorubka;
+    public static ItemFood rissole;
 
     public static ClientProxy proxyy;
 
@@ -85,6 +88,9 @@ public class TastyModCore {
         gutKnife = new GutKnife(Item.ToolMaterial.IRON);
         myasorubka = new BlockTable().setCreativeTab(CreativeTabs.tabFood);
         meatGrinderItem = new MeatGrindeItem(myasorubka);
+        smallSausages = new SmallSausages(3,1f,true);
+        friedSmallSausages = new FriedSmallSausages(4,1f,false);
+        rissole = new Rissole(3,1f,false);
 
         new TastyModRegister();
         new TastyModRecipes();
